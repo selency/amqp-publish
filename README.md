@@ -4,7 +4,7 @@ A simple tool to publish messages to RabbitMQ from the command line.
 
 ## Setup
 
-Download the latest release binary and save it to `/usr/local/bin` or any executable path.
+Download the [latest release](https://github.com/selency/amqp-publish/releases) binary and save it to `/usr/local/bin` or any executable path.
 
 ## Usage
 
