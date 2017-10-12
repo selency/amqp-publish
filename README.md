@@ -28,4 +28,4 @@ amqp-publish --help
 
 ## Credit
 
-Streadway's awesome [AMQP Go library](github.com/streadway/amqp).
+Streadway's awesome [AMQP Go library](https://github.com/streadway/amqp).
