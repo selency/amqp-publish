@@ -20,12 +20,17 @@ Publish the `bar` queue directly, using RabbitMQ default exchange
 amqp-publish --uri="amqp://admin:password@localhost:5672/" --exchange="" --routing-key="bar" --body="hello, world!"
 ```
 
-Cry for help
+Publish using an input file
 
 ```SHELL
-amqp-publish --help
+# Use one message per line
+echo '{"foo": "bar-1"}' >> file.txt
+echo '{"foo": "bar-2"}' >> file.txt
+echo '{"foo": "bar-3"}' >> file.txt
+
+amqp-publish --uri="amqp://admin:password@localhost:5672/" --exchange="foo" --routing-key="bar" --input-file="file.txt"
 ```
 
 ## Credit
 
-Streadway's awesome [AMQP Go library](https://github.com/streadway/amqp).
+Streadway's [AMQP Go library](https://github.com/streadway/amqp).
